@@ -11,31 +11,11 @@ runpodctl is an [open-source command-line interface (CLI)](https://github.com/ru
 
 When you create a Pod, it comes with runpodctl installed and configured with a Pod-scoped API key. You can also run runpodctl locally.
 
-To install runpodctl on your local machine, run the appropriate command for your operating system. 
+To install runpodctl on your local machine, run the following command. The script identifes and installs the most recent version available for your operating system. 
 
-<Tabs>
-  <TabItem value="mac" label="macOS" default>
-
-    ```bash
-    wget -qO- cli.runpod.net | sudo bash
-    ```
-
-  </TabItem>
-  <TabItem value="linux" label="Linux">
-
-    ```bash
-    wget -qO- cli.runpod.net | sudo bash
-    ```
-
-  </TabItem>
-  <TabItem value="windows" label="Windows">
-
-    ```bash
-    wget https://github.com/runpod/runpodctl/releases/download/v1.12.3/runpodctl-windows-amd64.exe -O runpodctl.exe
-   ```
-
-  </TabItem>
-</Tabs>
+```bash
+wget -qO- cli.runpod.net | sudo bash
+```
 
 :::tip 
 
@@ -73,7 +53,7 @@ saved new SSH public key into /Users/runpod/.runpod/ssh/RunPod-Key-Go.pub
 Now that you've configured an API key, check that runpodctl installed successfully. Run the following command:
 
 ```command
-runpodctl version
+runpodctl --version
 ``` 
 
 You should see which version is installed.
